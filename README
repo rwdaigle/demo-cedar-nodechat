@@ -1,4 +1,11 @@
-Demo for node.js http://tinyclouds.org/node
+# Run locally (assumes heroku and foreman gems are installed)
 
-to run
-$ /usr/local/bin/node server.js
+git clone git://github.com/rwdaigle/demo-cedar-nodechat.git
+cd demo-cedar-nodechat
+foreman start
+
+# Deploy to Heroku
+
+heroku create --stack cedar
+git push heroku master
+heroku open
